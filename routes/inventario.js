@@ -3,7 +3,9 @@ var router = express.Router();
 var path = require('path');
 
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname + '/../public/inventario.html'));
+  res.sendFile(path.join(__dirname + '/../public/inventario/inventario.html'));
 });
+
+
 
 module.exports = router;
