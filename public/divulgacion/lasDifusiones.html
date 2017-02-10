@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<!-- Ulises Torner Campuzano A01333456 -->
-		<!-- Administracion de Difusion de Lb. IoT -->
+		<!-- Alta de Difusion de Lb. IoT -->
 		<!-- Laboratorio de Aplicaciones Web -->
 
 		<meta name="author" content="Ulises Torner Campuzano" />
@@ -33,22 +33,45 @@
 			<small>CEDETEC 2do piso - ITESM CCM</small></h1>
 		</div>
 
-		<!-- Main Menu -->
-		<div id="mainMenuBlock" class="center">
-			<p class="lead text-center">Administraci&oacute;n de Difusi&oacute;n</p>
+		<!-- Modificaci&oacute;n Block-->
+			<div id="difTableBlock" class="difTable">
+				<p class="lead text-center">Difusiones</p>
+				<p class="text-center">Los cambios que hagan ser&aacute;n permanentes, 
+				favor de proceder con mucho cuidado</p>
+				
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tr>
+							<th>T&iacute;tulo</th>
+							<th>Descripci&oacute;n</th>
+							<th>Num, Im&aacute;genes</th>
+							<th>Fecha de Creaci&oacute;n</th>
+							<th>Modificar Im&aacute;genes</th>
+							<th>Eliminar</th>
+						</tr>
 
-			<!-- Nueva Difusi&oacute;n Butonoso -->
-			<a id="showNuevaDif" class="btn btn-primary btn-block" href="altaDifusion.html">
-			Nueva Difusi&oacute;n</a>
+						<tr>
+							<td>Ignauguraci&oacute;n</td>
+							<td>Wuuuu muchas cosass</td>
+							<td>1000 ocho mil</td>
+							<td>20/Sep/2017</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Im&aacute;genes</button>
+							</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-danger" type="submit" onclick="">
+								Eliminar</button>
+							</td>
+						</tr>
+					</table>
+				</div>
 
-			<!-- Modificar Existentes Butonoso -->
-			<a id="showTable" class="btn btn-primary btn-block" href="lasDifusiones.html">
-			Modificar Existentes</a>
-			<br/>
+				<!-- Cerrar Tabla Butonoso -->
+				<a id="nuevaDif" class="btn btn-primary btn-block" href="adminDifusion.html">
+				Salir</a>
 
-			<!-- Configuraci&oacute;es -->
-			<a id="settings" class="btn btn-default btn-block" href="prefDifusiones.html">
-			Preferencias</a>
+			</div>
 		</div>
 
 		<!-- Leyenda inferior -->

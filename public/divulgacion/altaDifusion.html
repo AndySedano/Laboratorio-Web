@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<!-- Ulises Torner Campuzano A01333456 -->
-		<!-- Administracion de Difusion de Lb. IoT -->
+		<!-- Alta de Difusion de Lb. IoT -->
 		<!-- Laboratorio de Aplicaciones Web -->
 
 		<meta name="author" content="Ulises Torner Campuzano" />
@@ -33,22 +33,39 @@
 			<small>CEDETEC 2do piso - ITESM CCM</small></h1>
 		</div>
 
-		<!-- Main Menu -->
-		<div id="mainMenuBlock" class="center">
-			<p class="lead text-center">Administraci&oacute;n de Difusi&oacute;n</p>
+		<!-- Nueva Difusi&oacute;n Block-->
+		<div id="nuevaDifBlock" class="center">
+			<p class="lead text-center">Nueva Difusi&oacute;n</p>
+			<p class="text-center">ingresa todos los datos para hacer una nueva campa&ntilde;a de difusi&oacute;n</p>
+				
+			<div class="table-responsive">
+				<table class="table">
+					<tr>
+						<td>T&iacute;tulo</td>
+						<td><input id="tituloInput" type="text" name="titulo"/></td>
+					</tr>
+					<tr>
+						<td>Descripci&oacute;n</td>
+						<td><input id="descInput" type="text" name="descripcion"/></td>
+					</tr>
+					<tr>
+						<td>Im&aacute;gen</td>
+						<td>
+							<button id="selectImagen" class="btn btn-default" type="submit" onclick="">
+							Seleccionar Imagen</button>
+						</td>
+					</tr>
+				
+				</table>
+			</div>
 
-			<!-- Nueva Difusi&oacute;n Butonoso -->
-			<a id="showNuevaDif" class="btn btn-primary btn-block" href="altaDifusion.html">
-			Nueva Difusi&oacute;n</a>
+			<!-- Crea Nueva Difusi&oacute;n Butonoso -->
+			<button id="nuevaDif" class="btn btn-primary btn-block" type="submit" onclick="">
+			Crear Difusi&oacute;n</button>
 
-			<!-- Modificar Existentes Butonoso -->
-			<a id="showTable" class="btn btn-primary btn-block" href="lasDifusiones.html">
-			Modificar Existentes</a>
-			<br/>
-
-			<!-- Configuraci&oacute;es -->
-			<a id="settings" class="btn btn-default btn-block" href="prefDifusiones.html">
-			Preferencias</a>
+			<!-- Cancelar Butonoso -->
+			<a id="cancelaNuevaDif" class="btn btn-warning btn-block" href="adminDifusion.html">
+			Cancelar</a>
 		</div>
 
 		<!-- Leyenda inferior -->
