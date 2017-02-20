@@ -16,6 +16,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<!-- JQuery -->
+  		<script type="text/javascript" src="./carrousel/js/jquery.js"></script>	
+
+  		<!-- Ligas a componentes del carrousel -->
+  		<script type="text/javascript" src="./carrousel/carrouselScripts.js" ></script>
+  		<style type="text/css" src="./carrousel/carrouselStyle.css"></style>
 	</head>
 
 	<body onload="init()">
@@ -34,32 +41,96 @@
 			Ingresar</a>
 		</div>
 
-		
+
+		<!-- Fake Promo -->
+		<div class="center">
+			<h3>Los alumnos crean nueva plataforma de IoT</h3>
+			<img src="./imgs/meta.png" width="530px">
+			<br/>
+			<p>El pasado 20 de Febrero, los alumnos de Laboratorio Web desarrollaron un
+			 sistema para la administraci&oacute;n de los pr&eacute;stamos del laboratorio
+			 de IoT</p>
+		</div>
+
+		<!-- Fake video promo -->
+		<div class="center">
+			<h3>Ejemplo de Promoci&oacute;n con video</h3>
+			<video width="530" controls>
+  			<source src="./imgs/tmpVideo.mp4" type="video/mp4">
+  				Your browser does not support the video tag.
+			</video>
+			<br/>
+			<p>Este es un ejemplo de una promo con un video</p>
+		</div>
+
+
+
+		<!-- Carrousel 
+		<div class="center">
+		<div id="carousel">	
+			<div id="buttons">
+				<a href="#" id="prev">prev</a>
+				<a href="#" id="next">next</a>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div id="slides"> 
+				<ul>
+					<li><img src="./carrousel/slide1.gif" width="240" height="240" alt="Slide 1"/></li>
+					<li><img src="./carrousel/slide2.gif" width="240" height="240" alt="Slide 2"/></li>
+					<li><img src="./carrousel/slide3.gif" width="240" height="240" alt="Slide 3"/></li>
+				</ul>
+			<div class="clear"></div>
+			</div>
+		</div>
+		</div>
+
+-->
+
+
+
+
+
+		<!-- Map -->
 		<div class="center">
 			<h3>¡Ven a conocernos!</h3>
 			<p>Estamos en CEDETEC 2do piso, a un costado del laboratorio de redes.</p>
 
 			<br/>
 
+			<!--
 			<div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
+		    <script>
+		      function initMap() {
+		        var uluru = {lat: -25.363, lng: 131.044};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 4,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
+		    <script async defer
+		    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+		    </script>
 
+		    -->
+
+		    <img src="./imgs/mapaTec.png" width="530px">
 		</div>
+
+
+
+
+
+
+
+
+
+
 
 
 		<!-- Leyenda inferior -->
