@@ -1,6 +1,7 @@
 body{
 	background-image: url("http://4.bp.blogspot.com/__ccXryaE164/TI1vYJIkCzI/AAAAAAAAAOg/ypGwupyjc-8/s1600/IMG_3925.JPG");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: center top;
 	color: black;
 	font-family: arial;
@@ -48,3 +49,11 @@ div.difTable{
 	padding: 30px;
 	text-align: justify;
 }
+
+
+/*Para el mapa de la página de inicio*/
+#map{
+    height: 400px;
+    width: 100%;
+}
+
