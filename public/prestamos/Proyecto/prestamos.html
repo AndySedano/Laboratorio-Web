@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- Fernando Garcia Quijano A01337375 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Nuevo prestamo</title>
+		<link rel="stylesheet" type="text/css" href="./fer.css">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script  type="text/javascript" src="../js/typeahead/0.11.1/typeahead.bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+        
+		<div class="banner_superior">
+			<h1>&nbsp;&nbsp;Laboratorio de Internet of Things
+			<small>CEDETEC 2do piso - ITESM CCM</small></h1>
+		</div>
+
+		<div class="center">
+            <form class="form-inline">
+                <div form-horizontal>
+                <p>El proyecto se realizar&aacute;: Fuera del campus <input type="radio" id="0"> Dentro del campus <input type="radio"> </p>
+                <p>Agregar material
+                    <select>
+                        <option value="0">Oculus</option>
+                        <option value="1">Raspberry pi</option>
+                        <option value="2">Dron</option>
+                        <option value="3">Galaxy S7</option>
+                    </select>
+                    <button type="button" class="btn btn-primary" onclick="agregarElemento()">Agregar</button>
+                </p>
+                </div>
+            </form>
+            <table id="material" class="table table-bordered table-hover">
+                <tr>
+                    <th>Cantidad y Descripci&oacute;n de equipo</th>
+                </tr>
+                <tr>
+                    <th>Descripci&oacute;n</th>
+                    <th>Marca</th>
+                    <th>N&uacute;mero de serie</th>
+                    <th>N&uacute;mero de inventario</th>
+                    <th>Fecha de entrega</th>
+                </tr>
+                <tr>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                </tr>
+            </table>
+            <p>
+                Agregar integrantes del equipo
+                <input type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false">
+                <button>Agregar</button>
+            </p>
+
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>Integrantes del equipo</th>
+                </tr>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Matricula</th>
+                    <th>Tel&eacute;fono</th>
+                    <th>Carrera</th>
+                </tr>
+                <tr>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                    <td>lorem ipsum</td>
+                </tr>
+            </table>
+            <button class="btn btn-primary final">Generar pr&eacute;stamo</button>
+		</div>
+
+
+		<!-- Leyenda inferior -->
+		<div class="banner_inferior">
+			<br/>
+			<p>Instituto Tecnol&oacute;gico y de estudios superiores de Monterrey Campus Ciudad de M&eacute;xico. Laboratiorio de Internet of Things/Internet de las cosas. CEDETEC 2do piso. Todos los derechos reservados. Desarrollado en ITESM CCM por Ulises Torner.</p>
+			<br/>
+		</div>
+        
+        <script  type="text/javascript" src="../js/typeahead/0.11.1/typeahead.bundle.js"></script>
+        <script>
+            function agregarElemento() {
+                var table = document.getElementById("material");
+                var row = table.insertRow(2);
+                var cell0 = row.insertCell(0);
+                var cell1 = row.insertCell(1);
+                var cell2 = row.insertCell(2);
+                var cell3 = row.insertCell(3);
+                var cell4 = row.insertCell(4);
+                cell0.innerHTML = "Articulo de realidad virtual";
+                cell1.innerHTML = "Oculus/Facebook";
+                cell2.innerHTML = "384535163584";
+                cell3.innerHTML = "TEC473251356";
+                cell4.innerHTML = "28/02/2017";
+            }
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // Defining the local dataset
+                var cars = ['Fernando', 'Juan', 'Montserrat', 'Diana', 'David', 'Jose', 'Fabian', 'Cristian', 'Carlos', 'Rodrigo'];
+
+                // Constructing the suggestion engine
+                var cars = new Bloodhound({
+                    datumTokenizer: Bloodhound.tokenizers.whitespace,
+                    queryTokenizer: Bloodhound.tokenizers.whitespace,
+                    local: cars
+                });
+
+                // Initializing the typeahead
+                $('.typeahead').typeahead({
+                    hint: true,
+                    highlight: true, /* Enable substring highlighting */
+                    minLength: 1 /* Specify minimum characters required for showing result */
+                },
+                {
+                    name: 'cars',
+                    source: cars
+                });
+            });  
+        </script>
+	</body>
+</html>
