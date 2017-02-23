@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<title>Administrador de Laboratorio - ITESM CCM</title>
+		<link rel="stylesheet" type="text/css" href="./uliStyle.css">
+		<script type="text/js">
+			function init() {
+				document.getElementById("nuevaDifBlock").style.display = 'none';
+				document.getElementById("difTableBlock").style.display = 'none';
+			}
+		</script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<div class="banner_superior">
+			<h1>&nbsp;&nbsp;Administrador de Laboratorio
+			<small>Laboratorio de Redes - ITESM CCM</small></h1>
+		</div>
+
+		<!--Seccion de Laboratoristas-->
+		<section id = "lab" class="page">
+			<div id="difTableBlock" class="difTable">
+				<p class="lead text-center">Laboratoristas</p>
+		
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tr>
+							<th>Nombre</th>
+							<th>Apellido</th>
+							<th>Tipo de Usario</th>
+							<th>Laboratorio</th>
+								Redes
+								Multimedia
+							<th>Nomina</th>
+							<th>Horario</th>
+								Matutino
+								Vespertino
+							<th>Correo</th>
+							<th>Password</th>	
+						</tr>
+
+						<tr>
+							<td><input type="text" name="Nombre"></td>
+							<td><input type="text" name="Apellido"></td>
+							<td><input type="text" name="Tipo"></td>
+							<td>A01333499</td>
+							<td>Matutino</td>
+							<td>andlex766@gmail.com</td>
+							<td>algo123</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Crear</button>
+							</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Editar</button>
+							</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-danger" type="submit" onclick="">
+								Eliminar</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<!--Seccion de Inventarios-->
+		<section id = "lab" class="page">
+			<div id="difTableBlock" class="difTable">
+				<p class="lead text-center">Inventarios</p>
+		
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tr>
+							<th>Descripci&oacute;n</th>
+							<th>No. Serie</th>
+							<th>No. Activo Fijo:</th>
+							<th>No. Art&iacute;culo</th>
+							<th>Folio</th>
+						</tr>
+
+						<tr>
+							<td>Raspberry</td>
+							<td>123</td>
+							<td>1</td>
+							<td>1</td>	
+							<td>123A</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Crear</button>
+							</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Editar</button>
+							</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-danger" type="submit" onclick="">
+								Eliminar</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<!--Seccion de Difusión-->
+		<section id = "lab" class="page">
+			<div id="difTableBlock" class="difTable">
+				<p class="lead text-center">Difusi&oacute;n</p>
+		
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tr>
+							<th>Contenido</th>
+						</tr>
+
+						<tr>
+							<td>Raspberry</td>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Crear</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+				<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<!--Seccion de Reportes-->
+		<section id = "lab" class="page">
+			<div id="difTableBlock" class="difTable">
+				<p class="lead text-center">Generar Reportes</p>
+		
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tr>
+							<td>
+								<button id="eliminarDif" class="btn btn-primary btn-default" type="submit" onclick="">
+								Generar</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<br/>
+		<br/>
+		<br/>
+	
+ 
+		<!-- Leyenda inferior -->
+		<div class="banner_inferior">
+		<td>
+								<button id="eliminarDif" class="btn btn-primary btn-danger" type="submit" onclick="">
+								Cerrar Sesión</button>
+							</td>
+			<br/>
+			<br/>
+		</div>
+	</body>
+</html>
