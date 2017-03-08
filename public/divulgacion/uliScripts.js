@@ -1,4 +1,5 @@
 function init() {	
+
 	//Oculta el bloquecillo de nueva difusion
 	document.getElementById("nuevaDifBlock").style.display = 'none';
 
