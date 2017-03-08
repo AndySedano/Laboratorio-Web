@@ -67,7 +67,7 @@
 
     <div class="list-group" id="lista">
 
-      <button class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample"><span class="badge">3</span>
+      <button class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample"> <span class="badge danger">3</span> <span class="badge">3</span>
         Oculus Rift
       </button>
 
@@ -76,11 +76,23 @@
           <label>Descripción:</label>
           <label>Casco de Realidad Virtual, contiene el oculus, cables conector a computadora y control de xbox</label>
           <label></label>
-          <ul>
-            <li>A2823612</li>
-            <li>CI812739</li>
-            <li>FC926323</li>
-          </ul>
+          <table class="table">
+            <tr>
+              <td>A2823612</td>
+              <td><button class="btn btn-warning btn-xs">Modificar</button></td>
+              <td><button class="btn btn-danger btn-xs">Borrar</button></td>
+            </tr>
+            <tr>
+              <td>CI812739</td>
+              <td><button class="btn btn-warning btn-xs">Modificar</button></td>
+              <td><button class="btn btn-danger btn-xs">Borrar</button></td>
+            </tr>
+            <tr>
+              <td>FC926323</td>
+              <td><button class="btn btn-warning btn-xs">Modificar</button></td>
+              <td><button class="btn btn-danger btn-xs">Borrar</button></td>
+            </tr>
+          </table>  
         </div>
       </div>
 
