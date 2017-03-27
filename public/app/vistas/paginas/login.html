@@ -1,0 +1,25 @@
+<div class="page-header"><h1>Login de usuarios: </h1> </div>
+
+<form ng-submit="login.login(datosLogin);">
+	<label>Nombre:</label>
+	<input type="text" name="nombre" class="form-control" placeholder="Ingresa tu Nombre" ng-model="login.datosLogin.nombre">
+	<br>
+	<label>Password:</label>
+	<input type="password" class="form-control"  name="password" placeholder="Ingresa tu Password" ng-model="login.datosLogin.password">
+	<br>	
+	<button  class="btn btn-primary" type="submit" >Login</button>
+</form>
+
+<br>
+<div class="row show-hide-message" ng-show="login.mensajeError">
+	<div class="alert alert-danger">
+	{{login.mensajeError}}
+	</div>
+</div>
+
+<br>
+<div class="row show-hide-message" ng-show="login.mensajeExito">
+	<div class="alert alert-success">
+	{{login.mensajeExito}}
+	</div>
+</div>

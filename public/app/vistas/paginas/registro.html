@@ -1,0 +1,28 @@
+<div class="page-header"><h1>Registro de usuarios: </h1> </div>
+
+<form ng-submit="registro.registraUsuario(datos);">
+	<label>Correo:</label>
+	<input type="text" name="email" class="form-control" placeholder="Ingresa tu Correo" ng-model="registro.datos.email">
+	<br>
+	<label>Nombre:</label>
+	<input type="text" name="nombre" class="form-control" placeholder="Ingresa tu Nombre" ng-model="registro.datos.nombre">
+	<br>
+	<label>Password:</label>
+	<input type="password" class="form-control"  name="password" placeholder="Ingresa tu Password" ng-model="registro.datos.password">
+	<br>	
+	<button  class="btn btn-primary" type="submit" >Registra</button>
+</form>
+
+<br>
+<div class="row show-hide-message" ng-show="registro.mensajeError">
+	<div class="alert alert-danger">
+	{{registro.mensajeError}}
+	</div>
+</div>
+
+<br>
+<div class="row show-hide-message" ng-show="registro.mensajeExito">
+	<div class="alert alert-success">
+	{{registro.mensajeExito}}
+	</div>
+</div>
