@@ -1,12 +1,12 @@
 {
-  "name": "passportdemo",
+  "name": "Lab IoT",
   "version": "1.0.0",
-  "description": "Passport demo",
+  "description": "Administracion de Lab IoT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Ulises Torner Campuzano",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",

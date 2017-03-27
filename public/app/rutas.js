@@ -9,23 +9,6 @@ angular.module('rutasApp', ['ngRoute'])
 		templateUrl: '/app/vistas/paginas/about.html'
 	})
 	
-	.when('/registro', {
-		templateUrl: '/app/vistas/paginas/registro.html',
-		controller: 'registroControlador',
-		controllerAs: 'registro'
-
-	})
-
-	.when('/login', {
-		templateUrl: '/app/vistas/paginas/login.html',
-		controller: 'loginController',
-		controllerAs: 'login'
-	})
-
-	.when('/logout', {
-		templateUrl: '/app/vistas/paginas/logout.html',
-	})
-	
 	.otherwise({ redirecTo: '/'});
 	
 	$locationProvider.html5Mode({
